@@ -19,7 +19,7 @@ const EmployeeSchema = mongoose.Schema({
     },
 
     employeeid: {
-        type: String,
+        type: Number,
         required: true
     }
 });
