@@ -1,0 +1,25 @@
+{
+  "name": "Employee-Directory",
+  "version": "1.0.0",
+  "description": "Easily see the information for your employees with this application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rxjas/Employee-Directory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rxjas/Employee-Directory/issues"
+  },
+  "homepage": "https://github.com/Rxjas/Employee-Directory#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.7",
+    "morgan": "^1.10.0"
+  }
+}
