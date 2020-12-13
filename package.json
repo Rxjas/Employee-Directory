@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
+    "seed": "node server/seeders/seed.js",
     "start:server": "nodemon server/server.js",
     "start:client": "cd client && npm start",
     "dev": "concurrently \"npm run start:server\" \"npm run start:client\"",
