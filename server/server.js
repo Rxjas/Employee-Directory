@@ -1,7 +1,7 @@
 const express = require('express');
 const logger = require('morgan');
-const path = require('path')
-const routes = require('./routes')
+const path = require('path');
+const routes = require('./routes');
 require('./config/db');
 
 const app = express();
@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 //parsing middleware
-app.use(express.urlencoded({ extendedL true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(logger('dev'));
 app.use(routes);
