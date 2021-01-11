@@ -17,7 +17,7 @@
   * [Questions?](#Questions?)
      
   ## Preview
-  ![](preview.png)
+  ![](assets/preview.png)
 
   [Deployed](https://rxjas.github.io/Employee-Directory/)
 
