@@ -53,8 +53,8 @@ function Directory(props) {
                 </select>
                 <button type="submit">Filter!</button>
             </form>
-            <Table>
-                <thead>
+            <Table className="greybackground">
+                <thead className="greybackground">
                     <tr>
                         <th>Employee ID</th>
                         <th>FirstName</th>
@@ -64,7 +64,7 @@ function Directory(props) {
                         <th>Date of Birth</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className="greybackground">
                     {employees.map(per => (
                         <tr key={per.id}>
                             <td>{per.id}</td>
