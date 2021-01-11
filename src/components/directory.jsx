@@ -16,12 +16,12 @@ function Directory (props){
                     </tr>
                 </thead>
                 <tbody>
-                    {employees.map(person => (
-                        <tr key= {person.id}>
-                            <td>{person.name}</td>
-                            <td>{person.title}</td>
-                            <td>{person.email}</td>
-                            <td>{person.id}</td>
+                    {employees.map(per => (
+                        <tr key= {per.id}>
+                            <td>{per.name}</td>
+                            <td>{per.title}</td>
+                            <td>{per.email}</td>
+                            <td>{per.id}</td>
                         </tr>
                     ))}
                 </tbody>
