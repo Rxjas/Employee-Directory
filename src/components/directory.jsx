@@ -2,8 +2,36 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 
 function Directory (props){
-
     let employees = props.employees;
+
+    function sort (key, order = "ascending"){
+        return(function innerSort(var1, var2) {
+            console.log(var1, var2);
+            if (!var1.hasOwnProperty(key) || !var2.hasOwnProperty(key)){
+                return 0;
+            }
+
+            const variableA = (typeof var1[key] ==="string") ? var1[key].toUpperCase() : var1[key];
+            const variableB = (typeof var2[key] ==="string") ? var2[key].toUpperCase() : var2[key];
+
+            let sorting = 0;
+            if(variableA > variableB){
+                sorting = 1;
+            }else if (variableB > variableA){
+                sorting = -1;
+            }
+
+            return(
+                (order === "descending") ? (sorting * -1) : sorting
+            );
+            
+        });
+    };
+
+    function activateSort (event){
+        //Do not allow the page to redirect somewhere since it's static
+        event.preventDefault();
+    } 
     return(
         <div>
             <form >
