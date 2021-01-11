@@ -1,15 +1,4 @@
-let mongoose = require("mongoose");
-let db = require("../models");
-
-//connect to the db to populate it with employees
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/employee_db', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-    useCreateIndex: true
-});
-
-let employeeSeed = [
+const allEmployees = [
     {
         name: 'Bill',
         title: 'Manager',
@@ -52,15 +41,6 @@ let employeeSeed = [
         email: 'aika123@123.com',
         employeeid: 8
     }
-];//end of employee seed
-
-db.Employee.deleteMany({})
-  .then(() => db.Employee.collection.insertMany(employeeSeed))
-  .then(data => {
-    console.log(data.result.n + " records inserted!");
-    process.exit(0);
-  })
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
+  ];//end of employee seed
+  
+  export default allEmployees;
