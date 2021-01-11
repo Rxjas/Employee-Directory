@@ -1,5 +1,5 @@
-import React from 'react';
-import {Component} from 'react';
+// import React from 'react';
+import { Component } from 'react';
 import allEmployees from './allEmployees';
 import Directory from './components/directory.jsx';
 
