@@ -4,7 +4,7 @@ import Table from 'react-bootstrap/Table';
 function Directory (props){
     let employees = props.employees;
 
-    function sort (key, order = "ascending"){
+    function filter (key, order = "ascending"){
         return(function innerSort(var1, var2) {
             console.log(var1, var2);
             if (!var1.hasOwnProperty(key) || !var2.hasOwnProperty(key)){
@@ -29,8 +29,10 @@ function Directory (props){
     };
 
     function activateSort (event){
+        console.log(event.target.children)
         //Do not allow the page to redirect somewhere since it's static
         event.preventDefault();
+        const 
     } 
     return(
         <div>
