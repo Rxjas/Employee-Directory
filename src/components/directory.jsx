@@ -40,19 +40,6 @@ function Directory(props) {
     }
     return (
         <div>
-            <form onSubmit={activateSort} >
-                <label>I want to sort by...</label>
-                <select name="keys" id="keys">
-                    <option value="dob.date">Date of Birth</option>
-                    <option value="name.first">FirstName</option>
-                    <option value="name.last">LastName</option>
-                </select>
-                <select>
-                    <option value="ascending">Ascending</option>
-                    <option value="descending">Descending</option>
-                </select>
-                <button type="submit">Filter!</button>
-            </form>
             <Table className="greybackground">
                 <thead className="greybackground">
                     <tr>
@@ -77,6 +64,19 @@ function Directory(props) {
                     ))}
                 </tbody>
             </Table>
+            <form onSubmit={activateSort} >
+                <label>I want to sort by...</label>
+                <select name="keys" id="keys">
+                    <option value="dob.date">Date of Birth</option>
+                    <option value="name.first">FirstName</option>
+                    <option value="name.last">LastName</option>
+                </select>
+                <select>
+                    <option value="ascending">Ascending</option>
+                    <option value="descending">Descending</option>
+                </select>
+                <button type="submit">Filter!</button>
+            </form>
         </div>//end of whole div
     );
 }
